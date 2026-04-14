@@ -76,6 +76,21 @@ Annual (× 365): $328.50
   - Generate video 3x/week instead of daily → saves $X/mo
 ```
 
-## Notes
+## Verification Status (v0.1 — 2026-04-14) — ⚠⚠ Numbers are invented
 
-Skeleton (v0.1). Pricing table will need updating quarterly. Consider automating rate fetch from kie.ai's pricing API once available.
+**Confident in:** the cost-estimation approach (unit × volume × frequency), the budget-cap-and-suggest-alternatives pattern, the principle that AI media is cheap per unit but expensive at scale.
+
+**⚠ NOT confident — all pricing numbers are illustrative guesses:**
+
+Every price in the table was estimated from rough market references, **not pulled from kie.ai's actual pricing page**. Specifically unverified:
+
+- `nano-banana`: $0.01-$0.03 per image — guessed
+- `flux-pro-1.1`: $0.04-$0.08 per image — guessed
+- `imagen-4`: $0.05-$0.10 per image — guessed
+- `veo-3`: $0.25-$1.50 per clip — guessed
+- `elevenlabs-turbo-v2`: $0.30 / 1K chars — guessed
+- `elevenlabs-pro`: $0.90 / 1K chars — guessed
+
+**Do not cite these numbers to students or clients.** Use the structure of the estimate, but fill in live pricing from kie.ai's dashboard before presenting costs to anyone.
+
+**Next author pass must:** pull kie.ai's current pricing page, replace the entire table, set up a quarterly review reminder, ideally fetch pricing dynamically via kie.ai's pricing API if available.

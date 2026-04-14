@@ -61,6 +61,14 @@ Override per call if needed.
 - `KIE_AI_API_KEY` is a live credential. Never commit. The `/secure-setup:init` skill (in ORBWEVA's `secure-setup` repo) already adds `.env` to `.gitignore` — verify that ran.
 - If you leak the key, rotate it in kie.ai dashboard immediately.
 
-## Notes
+## Verification Status (v0.1 — 2026-04-14) — ⚠ Verify before use
 
-Skeleton (v0.1). Future: auto-detect project type (Next.js, Python, n8n) and scaffold idiomatic client code.
+**Confident in:** the general shape — API key in `.env`, sanity test before production use, don't commit secrets.
+
+**Needs verification (all specifics):**
+- `KIE_AI_API_KEY` environment variable name — check kie.ai's actual naming convention
+- Endpoint URL `https://api.kie.ai/v1/images/generations` — **guessed, likely wrong**
+- Request shape (`model`, `prompt`, `size`, `n`) — guessed from OpenAI's API; kie.ai may use different field names
+- Default model names (`nano-banana`, `flux-pro-1.1`, `veo-3`, `elevenlabs-turbo-v2`) — names mentioned in conversation; availability and exact identifiers via kie.ai not confirmed
+
+**Next author pass must:** visit kie.ai's actual API docs, replace every endpoint URL + request shape + model identifier with current values. Treat everything in this skill as pseudocode until verified.

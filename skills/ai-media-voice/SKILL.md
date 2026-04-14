@@ -89,6 +89,15 @@ curl -X POST https://api.kie.ai/v1/audio/speech \
 - Layer under video with ffmpeg -i or a video editor
 ```
 
-## Notes
+## Verification Status (v0.1 — 2026-04-14) — ⚠ Verify before use
 
-Skeleton (v0.1).
+**Confident in:** the two-mode split (stock TTS vs voice cloning), the 30-60s clean sample requirement for cloning, common pitfalls (robotic clone, proper-noun pronunciation, emotion flatness).
+
+**Needs verification:**
+- Endpoint `https://api.kie.ai/v1/audio/speech` — **guessed**
+- Voice-upload endpoint `/v1/voices` — **guessed**
+- Field names (`voice`, `voice_id`, `input`, `response_format`) — guessed
+- ElevenLabs model identifiers (`elevenlabs-turbo-v2`, `elevenlabs-pro`) as exposed via kie.ai — unconfirmed
+- SSML support — claimed but not verified
+
+**Next author pass must:** validate against kie.ai's voice API docs, test with a real sample, document exact pronunciation-fix techniques (SSML vs custom dictionary vs per-provider).

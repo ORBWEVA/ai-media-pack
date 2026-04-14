@@ -77,6 +77,15 @@ Kora Lingo's "real conversations" campaign.
 - Add brand overlay + CTA in post (ffmpeg command attached)
 ```
 
-## Notes
+## Verification Status (v0.1 — 2026-04-14) — ⚠ Verify before use
 
-Skeleton (v0.1). Will grow with prompt-engineering recipes per platform and per vertical.
+**Confident in:** the workflow shape (brief → prompt → generate 3 variants → pick winner → aspect-ratio variants), the prompt template structure (subject, action, setting, camera, mood, style), common failure modes of AI video (temporal consistency, motion realism).
+
+**Needs verification:**
+- Veo 3 availability via kie.ai — not confirmed
+- API endpoint `https://api.kie.ai/v1/videos/generations` — **guessed, likely wrong**
+- Request fields (`duration`, `aspect_ratio`, `n`) — guessed; kie.ai may use different names
+- Typical Veo 3 output length limits — stated as ≤ 10s but may be longer/shorter
+- Pricing cited in `/ai-media:cost` — guessed
+
+**Next author pass must:** validate against kie.ai's current video API, refresh model list, test a real generation end-to-end, record actual cost + latency.

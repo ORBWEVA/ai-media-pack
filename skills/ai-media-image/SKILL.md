@@ -83,6 +83,14 @@ light, steam rising from bowl, camera over her shoulder, warm color grade,
 - 16:9 YouTube thumbnail: [URL]
 ```
 
-## Notes
+## Verification Status (v0.1 — 2026-04-14) — ⚠ Verify before use
 
-Skeleton (v0.1).
+**Confident in:** the brand-consistency approach (wrap prompts with brand fingerprint, use hex codes not color names), negative-prompt pattern for text/anatomy issues, two-stage workflow (iterate cheap → upscale final).
+
+**Needs verification:**
+- Endpoint `https://api.kie.ai/v1/images/generations` — **guessed, likely wrong**
+- Model identifiers (`nano-banana`, `flux-pro-1.1`, `imagen-4`) — availability via kie.ai unconfirmed
+- `size`, `n` parameters — guessed from OpenAI convention; kie.ai may differ
+- Aspect-ratio support across models
+
+**Next author pass must:** test against real kie.ai docs, replace endpoint and model names, add provider-specific prompt recipes (Flux vs Nano Banana behave differently — the pack shouldn't pretend they're interchangeable).

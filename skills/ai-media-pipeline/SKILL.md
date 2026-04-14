@@ -75,6 +75,13 @@ Summary report to Slack
 
 A deployable n8n workflow JSON, ready to import via n8n's UI or API.
 
-## Notes
+## Verification Status (v0.1 — 2026-04-14) — ⚠ Verify before use
 
-Skeleton (v0.1). Will grow with per-platform posting templates (Meta, TikTok, YouTube, LinkedIn) and cost-monitoring dashboards.
+**Confident in:** the general n8n pipeline shape (trigger → prompt source → generate → store → publish → monitor), common pipeline archetypes (daily cron, on-demand webhook, weekly batch), the "human review step before publishing" recommendation.
+
+**Needs verification:**
+- n8n node names (Set, Split In Batches, HTTP Request) — general knowledge; current n8n may have additional or renamed nodes
+- Platform API integrations (Meta Graph API, X API v2, TikTok Content Posting API, YouTube Data API, LinkedIn) — auth flows change frequently, not validated against current specs
+- Workflow JSON template — not actually provided; skill currently produces a description, not an importable file
+
+**Next author pass must:** export an actual n8n workflow JSON for each archetype (cron/webhook/batch), test end-to-end with a live kie.ai key, document rate limits per generation model + per publishing platform.

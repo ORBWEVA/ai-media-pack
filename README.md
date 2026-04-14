@@ -1,5 +1,7 @@
 # ORBWEVA AI-Media Pack
 
+> **⚠ Status: v0.1 skeletons — requires verification before production use.** The pack's shape (setup → per-medium skill → pipeline → cost) is solid, but specific endpoint URLs, model identifiers, API request shapes, and **all pricing numbers are educated guesses** — not pulled from kie.ai's actual docs. Each SKILL.md ends with a Verification Status block detailing what's confirmed vs what's guessed. The author's first pass should verify every API call against kie.ai's live documentation.
+
 Claude Code skills for automating AI-generated media pipelines — video, image, voice — primarily via [**kie.ai**](https://kie.ai), a unified API aggregator for models like Veo 3, Nano Banana, Flux, ElevenLabs, and others.
 
 **Who this is for:** founders who need to generate marketing video, product images, voiceovers, and social-ready assets at scale, without juggling five API dashboards.
