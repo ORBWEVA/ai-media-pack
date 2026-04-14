@@ -1,0 +1,12 @@
+{
+  "name": "ai-media-pack",
+  "owner": {"name": "ORBWEVA"},
+  "plugins": [
+    {"name":"ai-media-setup","source":{"source":"url","url":"https://github.com/ORBWEVA/ai-media-pack.git"},"description":"Wire kie.ai (unified AI media API) into your project — API key in .env, model selection, sanity test call. Use when starting AI media work, setting up Veo 3 / Nano Banana / Flux / ElevenLabs integrations.","version":"0.1.0","author":{"name":"ORBWEVA"}},
+    {"name":"ai-media-video","source":{"source":"url","url":"https://github.com/ORBWEVA/ai-media-pack.git"},"description":"Generate video via Veo 3 (or other video models via kie.ai). Handles prompt-to-script-to-clip, variations, aspect ratios. Use when the user wants to create video ads, product demos, social clips, or marketing video.","version":"0.1.0","author":{"name":"ORBWEVA"}},
+    {"name":"ai-media-image","source":{"source":"url","url":"https://github.com/ORBWEVA/ai-media-pack.git"},"description":"Generate images via Nano Banana / Flux / Imagen through kie.ai. Batch runs, brand-consistent prompts, variations. Use for product shots, marketing images, social graphics.","version":"0.1.0","author":{"name":"ORBWEVA"}},
+    {"name":"ai-media-voice","source":{"source":"url","url":"https://github.com/ORBWEVA/ai-media-pack.git"},"description":"TTS and voice cloning via kie.ai voice models (ElevenLabs, etc). Use for voiceovers, audio ads, multi-lingual narration, podcast intro/outros.","version":"0.1.0","author":{"name":"ORBWEVA"}},
+    {"name":"ai-media-pipeline","source":{"source":"url","url":"https://github.com/ORBWEVA/ai-media-pack.git"},"description":"End-to-end n8n workflow for AI media generation — trigger, generate, post-process, store, publish. Use when setting up automated content pipelines (daily social posts, weekly ads, on-demand creation).","version":"0.1.0","author":{"name":"ORBWEVA"}},
+    {"name":"ai-media-cost","source":{"source":"url","url":"https://github.com/ORBWEVA/ai-media-pack.git"},"description":"Estimate cost of a batch AI media generation run before committing. Handles per-model pricing. Use before kicking off large batches to avoid overspending.","version":"0.1.0","author":{"name":"ORBWEVA"}}
+  ]
+}
